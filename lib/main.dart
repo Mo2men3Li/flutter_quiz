@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quiz/screens/books_screen.dart';
+import 'package:flutter_quiz/screens/mental_health_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,8 +21,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         BooksScreen.routeName:(context)=> const BooksScreen(),
+        MentalHealthScreen.routeName:(context)=> const MentalHealthScreen(),
       },
-      initialRoute: 'BooksScreen',
+      initialRoute: 'MentalHealthScreen',
     );
   }
 }

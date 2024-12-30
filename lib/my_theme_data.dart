@@ -5,6 +5,7 @@ class MyThemeData {
   static const Color primaryColor = Color(0xff4838D1);
   static const Color blackColor = Color(0xFF010104);
   static const Color greyColor = Color(0xff6A6A8B);
+  static const Color purpleColor = Color(0xff371B34);
   static ThemeData lightTheme = ThemeData(
     scaffoldBackgroundColor: Colors.transparent,
     textTheme: TextTheme(
@@ -38,11 +39,6 @@ class MyThemeData {
         fontWeight: FontWeight.bold,
         color: primaryColor,
       ),
-    ),
-    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-      type: BottomNavigationBarType.fixed,
-        selectedItemColor:primaryColor,
-        unselectedItemColor:greyColor,
     ),
   );
   static ThemeData darkTheme = ThemeData();

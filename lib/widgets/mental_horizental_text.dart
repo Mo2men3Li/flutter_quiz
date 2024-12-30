@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class HorizontalText extends StatelessWidget {
-  HorizontalText({required this.title, super.key});
+class MentalHorizontalText extends StatelessWidget {
+  MentalHorizontalText({super.key, required this.title});
 
   String title;
 
@@ -14,7 +14,6 @@ class HorizontalText extends StatelessWidget {
         Text(
           title,
           style: GoogleFonts.poppins(
-            color: const Color(0xff010104),
             fontSize: 20,
             fontWeight: FontWeight.w500,
           ),
@@ -22,12 +21,13 @@ class HorizontalText extends StatelessWidget {
         Text(
           'see more',
           style: GoogleFonts.poppins(
-            color: const Color(0xff4838D1),
+            color: const Color(0xff027A48),
             fontSize: 17,
-            fontWeight: FontWeight.w500,
+            fontWeight: FontWeight.w600,
           ),
         ),
       ],
     );
+    ;
   }
 }
