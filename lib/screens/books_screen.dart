@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_quiz/my_theme_data.dart';
 import 'package:flutter_quiz/widgets/horizental_text.dart';
 import 'package:flutter_quiz/widgets/tab_widget.dart';
-import 'package:google_fonts/google_fonts.dart';
-
 import '../widgets/best_seller_item.dart';
 
 class BooksScreen extends StatefulWidget {
@@ -26,6 +24,10 @@ class _BooksScreenState extends State<BooksScreen> {
       length: 4,
       child: Scaffold(
         bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Colors.white,
+          type: BottomNavigationBarType.fixed,
+          selectedItemColor:MyThemeData.primaryColor,
+          unselectedItemColor:MyThemeData.greyColor,
           currentIndex: selectedIndex,
           onTap: (value) {
             selectedIndex = value;
@@ -82,7 +84,7 @@ class _BooksScreenState extends State<BooksScreen> {
                     const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
                 child: Column(
                   children: [
-                    HorizentalText(
+                    HorizontalText(
                       title: 'Categories',
                     ),
                     const SizedBox(height: 16),
@@ -117,7 +119,7 @@ class _BooksScreenState extends State<BooksScreen> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                HorizentalText(
+                                HorizontalText(
                                   title: 'Recommended for you',
                                 ),
                                 const SizedBox(
@@ -151,7 +153,7 @@ class _BooksScreenState extends State<BooksScreen> {
                                 const SizedBox(
                                   height: 16,
                                 ),
-                                HorizentalText(
+                                HorizontalText(
                                   title: 'Best seller',
                                 ),
                                 const SizedBox(
